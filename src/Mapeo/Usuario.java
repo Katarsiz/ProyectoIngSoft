@@ -33,10 +33,10 @@ public class Ususario{
 	@column(nmae = "psswd")
 	private String psswd;
 	
-	@OneToMany(mappedBy = "calificaciones_usuario")
+	@OneToMany(mappedBy = "calificacion")
 	private List<Calificacion> calificaciones_ususario;
 	
-	@OneToMany(mappedBy = "comentarios-ususario")
+	@OneToMany(mappedBy = "comentario")
 	private List<Comentario> comentarios_usuario;
 	
 	public int getUsuario_id(){
