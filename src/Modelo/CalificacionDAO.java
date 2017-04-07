@@ -9,7 +9,7 @@ import org.hibernate.Transaction;
  *
  * @author Emilio
  */
-public class CalificacionDAO implements AbstractDAO{
+public class CalificacionDAO{
 
 	private SessionFactory sessionFactory;
 
@@ -17,7 +17,6 @@ public class CalificacionDAO implements AbstractDAO{
         	this.sessionFactory = sessionFactory;
     	}
   	
-	@Override
   	public void guardar(Celificacion c) {
     
 	        Session session = sessionFactory.openSession();
@@ -37,7 +36,6 @@ public class CalificacionDAO implements AbstractDAO{
         	}
 	}
 	
-	@Override
 	public void eliminar(Calificacion grupo) {
     
         	Session session = sessionFactory.openSession();
