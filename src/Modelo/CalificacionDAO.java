@@ -17,7 +17,7 @@ public class CalificacionDAO{
         	this.sessionFactory = sessionFactory;
     	}
   	
-  	public void guardar(Celificacion c) {
+  	public void guardar(Calificacion c) {
     
 	        Session session = sessionFactory.openSession();
         	Transaction tx = null;
