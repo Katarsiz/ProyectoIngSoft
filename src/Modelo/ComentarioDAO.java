@@ -9,7 +9,7 @@ import org.hibernate.Transaction;
  *
  * @author Emilio
  */
-public class ComentarioDAO implements AbstractDAO{
+public class ComentarioDAO{
 
 	private SessionFactory sessionFactory;
 
