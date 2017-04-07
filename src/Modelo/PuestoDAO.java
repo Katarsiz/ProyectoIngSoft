@@ -7,7 +7,7 @@ public class PuestoDAO{
         	this.sessionFactory = sessionFactory;
     	}
   	
-  	public void guardar(Celificacion c) {
+  	public void guardar(Puesto c) {
     
 	        Session session = sessionFactory.openSession();
         	Transaction tx = null;
@@ -26,7 +26,7 @@ public class PuestoDAO{
         	}
 	}
 	
-	public void eliminar(Calificacion grupo) {
+	public void eliminar(Puesto c) {
     
         	Session session = sessionFactory.openSession();
         	Transaction tx = null;
