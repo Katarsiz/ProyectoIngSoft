@@ -17,7 +17,6 @@ public class ComentarioDAO{
         	this.sessionFactory = sessionFactory;
     	}
   	
-	@Override
   	public void guardar(Comentario c) {
     
 	        Session session = sessionFactory.openSession();
@@ -37,7 +36,6 @@ public class ComentarioDAO{
         	}
 	}
 	
-	@Override
 	public void eliminar(Comentario grupo) {
     
         	Session session = sessionFactory.openSession();
