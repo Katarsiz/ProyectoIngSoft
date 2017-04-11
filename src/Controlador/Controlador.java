@@ -26,7 +26,7 @@ public class Controlador{
 	}
 	
 	@RequestMapping(value="/iniciarSesion", method = RequestMethod.GET)
-        public ModelAndView profesor(ModelMap model,HttpServletRequest request){
+        public ModelAndView iniciarSesion(ModelMap model,HttpServletRequest request){
 		String u = request.getParameter("correo");
 		String c = request.getParameter("psswd");
 		
